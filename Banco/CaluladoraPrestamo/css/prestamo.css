@@ -1,0 +1,98 @@
+*{
+    padding: 1%;
+}
+body{
+    background: url(../Imagenes/diseño.png) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.85;
+}
+h1{
+    text-align: center;
+    font-family: 'arial';
+}
+label{
+    font-family: 'arial';
+    font-weight: bold;
+}
+.form{
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border:  2px;
+}
+input{
+    width: 200px;
+    margin-bottom: 10px;
+    padding: 8px;
+    margin-right: -6px;
+    background-color: #fdfef7;
+    border: #173441 1.8px solid;
+}
+fieldset{
+    border: #173441 2px solid;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+i{
+    background-color: #fdfef7;
+    color: rgb(156, 155, 155);
+    border: #173441 1px solid;
+    padding: 6.8px 8px 9.8px 8px;
+    border-left: white;
+    margin-bottom: 10px;
+}
+.tab{
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'arial';
+    background-color: #fdfef7;
+    border: #173441 2px solid;
+    margin: 0 auto;
+    width: 500px;
+}
+thead{
+    border: #173441 2px solid;
+    font-weight: bold;
+}
+tr{
+    border: #173441 2px solid;
+}
+td{
+    border: #173441 2px solid;    
+}
+
+button {
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:200px;
+}
+
+button span {
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover span {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#user-info{
+    text-align: center;
+    color: white;
+}

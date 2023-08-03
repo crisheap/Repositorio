@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('./Imagenes/diseño.png');
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.login-box{
+    position: relative;
+    width: 700px;
+    height: 650px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+h2{ 
+    font-size: 5em;
+    color: #fff;
+    text-align: center;
+
+}
+
+.input-box{
+    position: relative;
+    width: 550px;
+    margin: 70px 0;
+    border-bottom: 3px solid #fff;
+}
+
+.input-box label {
+    position: relative;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forgot{
+    margin: -15px 0 15px;
+    font-size: 1.2em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    margin-right: 3px;
+
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+button{
+    border: 0;
+    background-image: linear-gradient(
+        155deg,
+        #9500ff,
+        #09f,
+        #00DDFF
+    );
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    font-size: 30px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button {
+    width: 100%;
+    height: 65px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+button span{
+    background-color: #000000;
+    padding: 20px 30px;
+    border-radius: 100px;
+    transition: .3s;
+    width: 100%;
+    
+}
+
+button:hover span {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.91);
+}
+
+
+
+
+.register-link{
+    font-size: 1.1em;
+    color: #fff;
+    text-align: center;
+    margin: 35px 0 20px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 360px){
+    .login-box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+
+    }
+    .input-box{
+        width: 290px;
+    }
+}
+

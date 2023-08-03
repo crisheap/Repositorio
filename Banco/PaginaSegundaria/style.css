@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    nav-down: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('./Imagenes/diseño.png') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+    color: white;
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+body header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    background: transparent;
+    color: #fff;
+    min-width: 50vh;
+    width: 100%;
+}
+
+body section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0%;
+}
+
+header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.4em;
+    padding: 0;
+}
+
+form input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #111;
+    font-size: 15px;
+    border-radius: 15px; /* Removed 'solid' from border-radius */
+    border: 2px solid #00DDFF; /* Changed border-radius to border */
+    
+}
+
+.box-text {
+    font-size: 1.2em;
+    width: 40%;
+    height: 70%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    
+}
+
+/* Manejo del botón Registro de Pago */
+
+button {
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button span {
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover span {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+body footer {
+    display: flex;
+    justify-content: center;
+    background: rgb(0, 66, 63);
+    font-size: 1.2em;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+}
