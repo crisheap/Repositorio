@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c44aa10f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CalculadoraPrestamo/css/calculadora.css">
+    <title>Banco SA</title>
+</head>
+<body>
+    <div class="form">
+        <fieldset>
+            <h1>SIMULADOR DE PRÉSTAMO</h1>
+            <center><p>¡Banco Super Amigo!</p></center>
+            <form>
+                <div>
+                    <label for="capital">CAPITAL
+                        <input type="text" placeholder="Ingrese el capital prestado" id="capital">
+                        <i class="fas fa-coins"></i>
+                    </label>
+                </div>
+                <div>
+                    <label for="cuota">CUOTAS
+                        <input type="text" placeholder="Ingrese las cuotas del préstamo" id="cuota">
+                        <i class="far fa-calendar-alt"></i>
+                    </label>
+                </div>
+                <div>
+                    <label for="interes">INTERÉS
+                        <input type="text" placeholder="Ingrese el interés a generar" id="interes">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </label>
+                </div>
+            </form>
+            <div class="btn-button">
+                <button class="btn" onclick="gen_table();">CALCULAR</button>
+                <br>
+                <button class="btn" id="btn-atras">
+                    <span>Atras</span> 
+                </button>
+            </div>
+        </fieldset>
+        <hr>
+        <table class="tab">
+            <thead>
+                <tr>
+                    <td>NRO</td>
+                    <td>CAPITAL</td>
+                    <td>INTERÉS</td>
+                    <td>IMPORTE A PAGAR</td>
+                </tr>
+            </thead>
+            <tbody id="tab">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div>
+            <button id="btn-logout">
+                <span>Cerrar Sesión</span> 
+            </button>
+        </div>
+    </div>
+    <div id="user-info">
+    </div>
+
+    <script src="../CalculadoraPrestamo/scripts/calculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco SA</title>
+    <link rel="stylesheet" href="../PaginaSegundaria/style.css">
+</head>
+<body>
+    <header>
+        <h1>Banco Super Amigo</h1>
+    </header>
+
+    <main>
+        <h1 class="title-info">¡Bienvenido!</h1>
+    </main>
+
+    <section class="box-text">
+        <div class="container">
+            <label for="c1">Cuenta 1 Saldo:</label> 
+            <input type="text" name="cantidad1" id="c1" value="10000">
+            <br>
+            <label for="c2">Cuenta 2 Saldo:</label>
+            <input type="text" name="cantidad2" id="c2" value="15000">
+            <br>
+            <button  id="btn-calculadora">
+                <span>Calculadora</span>
+            </button>
+        </div>
+        
+        <div class="container2">
+            <form action="">
+                <h2>Transferencias</h2>
+                <input type="text" name="" id="Cant" placeholder="Cantidad">
+                <br>
+                <hr>
+                <br>
+                <input type="button" value="Transferencia de 1 a 2" id="bt2" onclick="formula()">
+                <br>
+                <input type="button" value="Transferencia de 2 a 1" id="bt3" onclick="formula2()">
+                <br>
+                <input type="button" value="Depositar a cuenta 1" id="bt4" onclick="formula3()">
+                <br>
+                <input type="button" value="Depositar a cuenta 2" id="bt5" onclick="formula4()">
+                <br>
+                <input type="button" value="Retirar de cuenta 1" id="bt6" onclick="formula5()">
+                <br>
+                <input type="button" value="Retirar de cuenta 2" id="bt7" onclick="formula6()">
+                <hr>
+            </form>
+            <br>
+            <div>
+                <button  id="btn-pago">
+                    <span>Realizar Pago</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bubble-container">
+            <div class="bubble"></div>
+        </div>
+        <p>&copy; 2023 Banco Super Amigo. Todos los derechos reservados.</p>
+        
+    </footer>
+    <script src="../PaginaSegundaria/script.js"></script>
+</body>
+</html>

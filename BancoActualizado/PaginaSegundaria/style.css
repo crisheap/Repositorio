@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    nav-down: 0;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #afb1af;
+    font-size: 18px;
+    font-weight: bold;    
+    background: url('./Imagenes/diseño.png') no-repeat center center fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    align-items: center;
+
+    
+}
+
+
+
+header, main{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    
+}
+
+#bt2, #bt3, #bt4, #bt5, #bt6, #bt7{
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+    font-size: 13pt;
+    font-weight: bold;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px 50px;
+    gap: 10px;
+}
+
+#c1, #c2{
+    background-color: #00DDFF;
+    text-align: center;
+    font-size: 13pt;
+    font-weight: bold;
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    gap: 10px;
+}
+
+#Cant{
+    text-align: center;
+    font-size: 13pt;
+    font-weight: bold;
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.box-text {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 40%;
+    height: 60%;
+    border-top: 4px solid #ffffff;
+    border-left: 4px solid #ffffff;
+    box-shadow: 35px 34px 5px #03f0f835;
+    border-radius: 35px 100px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    gap: 20%;
+    margin: auto;
+}
+
+
+.box-text div .container{
+    width: 30%;
+    height: 60%;
+    background-color: #09f;
+    
+    
+
+}
+
+.box-text div .container2{
+    
+    width: 30%;
+    height: 60%;
+    background-color: red;
+   
+    
+}
+
+
+.container, .container2{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+}
+
+
+/* Manejo del botón Registro de Pago */
+
+button {
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+button span {
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover span {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    height: 100px;
+    text-align: center;
+}
+
+.bubble-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #67aef9;
+    border-radius: 50%;
+    animation: bubble-size 3s ease-in-out infinite, bubble-move 3s ease-in-out infinite;
+    --size: 4rem;
+    --distance: 10rem;
+}
+
+@keyframes bubble-size {
+    0%, 75% {
+        width: var(--size);
+        height: var(--size);
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
+}
+
+@keyframes bubble-move {
+    0% {
+        bottom: -4rem;
+    }
+    100% {
+        bottom: var(--distance);
+    }
+}
