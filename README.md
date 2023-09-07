@@ -1,16 +1,16 @@
-### ¡Hola! Bienvenido a mi modulo. 👋
+### ¡Hola! Bienvenido a mi módulo. 👋
 
 <!--
-**crisheap/crisheap** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**crisheap/crisheap** es un repositorio ✨ _especial_ ✨ porque su `README.md` (este archivo) aparece en su perfil de GitHub.
 
-Here are some ideas to get you started:
+Aquí hay algunas ideas para comenzar:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- 🔭 Actualmente estoy trabajando en la empresa de Colsubsidio
+- 🌱 Actualmente estoy aprendiendo programación en HTML, CSS, JavaScript
+- 👯 Busco colaborar en la ensañanza 
+- 🤔 Estoy buscando ayuda en apreder mucho en programación
+- 💬 Pregúntame sobre lo que quieras.
+- 📫 Cómo contactarme: 3123154810 - 3004246845
+- 😄 Pronombres: Crisheap
+- ⚡ Dato curioso: Me gusta las peluculas de Terror.
 -->
